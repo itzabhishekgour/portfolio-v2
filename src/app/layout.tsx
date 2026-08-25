@@ -45,7 +45,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Abhishek Gour" }],
   creator: "Abhishek Gour",
-  metadataBase: new URL("https://abhishekgour.dev"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://abhishek-gour.vercel.app"
+  ),
   openGraph: {
     type: "website",
     locale: "en_US",
